@@ -1,0 +1,41 @@
+@import "tailwindcss"; 
+@theme {
+  /* Fonts */
+  --font-sans: Inter, sans-serif;
+
+  /* Colors */
+  --color-paradigm-bg: #050a10;
+  --color-paradigm-accent: #00d1ff;
+  --color-paradigm-glass: rgba(255, 255, 255, 0.05);
+  --color-paradigm-border: rgba(255, 255, 255, 0.1);
+  --color-paradigm-dark: #0a0f16;
+
+  /* Background images */
+  --background-image-hero-glow: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 209, 255, 0.15) 0%,
+    rgba(5, 10, 16, 0) 60%
+  );
+
+  --background-image-card-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  /* Animations */
+  --animate-fade-in-up: fade-in-up 0.5s ease-out forwards;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Keyframes live outside @theme */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
