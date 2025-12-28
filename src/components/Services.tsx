@@ -62,7 +62,7 @@ const ServiceAccordionItem: React.FC<{
     isOpen: boolean; 
     onClick: () => void;
     index: number;
-}> = ({ item, isOpen, onClick, index }) => {
+}> = ({ item, isOpen, onClick }) => {
   const contentRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
   
